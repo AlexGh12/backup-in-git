@@ -9,12 +9,6 @@
             "email": "a-l-e-x_1379@hotmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/AlexGh12/backup-in-git.git"
-        }
-    ],
     "require": {
         "php": "^7.4|^8.0",
         "laravel/framework": "^8.37|^9.0|^10.0"
