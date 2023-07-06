@@ -1,0 +1,24 @@
+{
+    "name": "AlexGh12/backup-in-git",
+    "description": "Comando para backup de base de datos en Laravel y sube cambios a un repositorio git",
+    "keywords": ["backup database","in-git","in-laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex G'h",
+            "email": "a-l-e-x_1379@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.37|^9.0|^10.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexGh12\\backup\\": "src/"
+        }
+    }
+}
