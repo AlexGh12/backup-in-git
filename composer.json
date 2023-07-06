@@ -20,5 +20,12 @@
         "psr-4": {
             "AlexGh12\\backup\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "master": "1.0"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
