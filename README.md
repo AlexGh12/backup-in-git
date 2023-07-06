@@ -18,8 +18,18 @@ Respalda tus bases de datos productivas en un repositorio de git. Ejecuta un com
 
 ## Instalación
 
+Ejecutar en la consola:
 ```bash
 composer require AlexGh12/backup-in-git
+```
+
+Despues agregar en `config/app.php`
+```php
+'providers' => ServiceProvider::defaultProviders()->merge([
+	/* ... */
+	AlexGh12\BackupInGit\BackupInGitServiceProvider::class,
+	/* ... */
+])->toArray(),
 ```
 
 ## Uso
@@ -27,7 +37,7 @@ composer require AlexGh12/backup-in-git
 La primera ves que se ocupe, se tiene que ejecutar en la terminal para configurar el repositorio.
 
 ```bash
-php artisan backup:db
+php artisan BackupInGit:db
 ```
 
 Preguntara, si quieres crear la carpta para alojar el nuevo repositorio.
@@ -42,7 +52,7 @@ protected function schedule(Schedule $schedule): void
 	$schedule->command('telescope:prune --hours=48')->daily(); 
 	
 	// Respando de Base de datos
-	$schedule->command('backuo:db')->daily();
+	$schedule->command('BackupInGit:db')->daily();
 }
 ```
 
