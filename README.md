@@ -1,14 +1,14 @@
 <p align="center"><img src="art/logo.svg" alt="Logo Alex Gh"></p>
 
 <p align="center">
-    <a href="https://packagist.org/packages/laravel/telescope">
-        <img src="https://img.shields.io/packagist/dt/laravel/telescope" alt="Total Downloads">
+    <a href="https://packagist.org/packages/alexgh12/backup-in-git">
+        <img src="https://img.shields.io/packagist/dt/alexgh12/backup-in-git" alt="Total Downloads">
     </a>
-    <a href="https://packagist.org/packages/laravel/telescope">
-        <img src="https://img.shields.io/packagist/v/laravel/telescope" alt="Latest Stable Version">
+    <a href="https://packagist.org/packages/alexgh12/backup-in-git">
+        <img src="https://img.shields.io/packagist/v/alexgh12/backup-in-git" alt="Latest Stable Version">
     </a>
-    <a href="https://packagist.org/packages/laravel/telescope">
-        <img src="https://img.shields.io/packagist/l/laravel/telescope" alt="License">
+    <a href="https://packagist.org/packages/alexgh12/backup-in-git">
+        <img src="https://img.shields.io/packagist/l/alexgh12/backup-in-git" alt="License">
     </a>
 </p>
 
