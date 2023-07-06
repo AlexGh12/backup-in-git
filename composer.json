@@ -19,18 +19,13 @@
         "php": "^7.4|^8.0",
         "laravel/framework": "^8.37|^9.0|^10.0"
     },
-    "require-dev": {
-        "phpstan/phpstan": "^1.10"
-    },
     "autoload": {
         "psr-4": {
             "AlexGh12\\backup\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
+	"config": {
+        "sort-packages": true
     },
     "minimum-stability": "stable",
     "prefer-stable": true
