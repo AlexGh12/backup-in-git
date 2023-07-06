@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB as DBs;
 
-class database extends Command
+class BackupDB extends Command
 {
     /**
      * The name and signature of the console command.
