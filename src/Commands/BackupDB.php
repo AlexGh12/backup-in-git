@@ -1,6 +1,6 @@
 <?php
 
-namespace AlexGh12\BackupInGit\Console;
+namespace AlexGh12\BackupInGit\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;

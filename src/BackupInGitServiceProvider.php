@@ -1,17 +1,32 @@
 <?php
 
-namespace AlexGh12;
+namespace AlexGh12\BackupInGit;
 
 use AlexGh12\BackupInGit\Console\database;
 use Illuminate\Support\ServiceProvider;
 
-class BackupInGit extends ServiceProvider
+class BackupInGitServiceProvider extends ServiceProvider
 {
-	public function register()
+	/**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
     {
-		$this->commands([
-			database::class,
-		]);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                Commands\BackupDB::class,
+            ]);
+        }
     }
 
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+    }
 }

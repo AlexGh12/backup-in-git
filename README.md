@@ -36,14 +36,14 @@ y despues solicita el repositorio
 Una vez configurado podemos dejar el comando programado en: `app/Console/Kernel.php`
 
 ```php
-    protected function schedule(Schedule $schedule): void
-    {
-        // Recomendado si tienes telescope
-		$schedule->command('telescope:prune --hours=48')->daily(); 
-
-        // Respando de Base de datos
-        $schedule->command('backuo:db')->daily();
-    }
+protected function schedule(Schedule $schedule): void
+{
+	// Recomendado si tienes telescope
+	$schedule->command('telescope:prune --hours=48')->daily(); 
+	
+	// Respando de Base de datos
+	$schedule->command('backuo:db')->daily();
+}
 ```
 
 ## Licencia
