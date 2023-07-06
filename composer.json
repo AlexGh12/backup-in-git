@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AlexGh12\\backup\\": "src/"
+            "AlexGh12\\BackupInGit\\": "src/"
         }
     },
 	"config": {
