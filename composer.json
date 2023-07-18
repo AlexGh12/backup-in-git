@@ -21,6 +21,19 @@
 	"config": {
         "sort-packages": true
     },
+	"extra": {
+        "laravel": {
+			"providers": [
+				"AlexGh12\\BackupInGit\\BackupInGitServiceProvider"
+			],
+			"aliases": {
+				"BackupInGit": "AlexGh12\\BackupInGit"
+			}
+		},
+		"branch-alias": {
+            "1.x-dev": "1.x"
+        }
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }
