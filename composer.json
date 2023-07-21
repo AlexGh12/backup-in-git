@@ -31,7 +31,8 @@
 			}
 		},
 		"branch-alias": {
-            "1.x": "1.x-dev"
+            "1.x": "1.x-dev",
+			"2.x": "2.x-dev"
         }
     },
     "minimum-stability": "stable",
