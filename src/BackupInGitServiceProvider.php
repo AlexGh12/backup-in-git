@@ -17,6 +17,7 @@ class BackupInGitServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Commands\BackupDB::class,
+				Commands\BackupDBs::class,
             ]);
         }
     }
