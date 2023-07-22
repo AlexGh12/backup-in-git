@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 class BackupInGitServiceProvider extends ServiceProvider
 {
 	/**
-     * Bootstrap the application services.
+     * Inicia los servicios de la aplicación
      *
      * @return void
      */
@@ -20,10 +20,17 @@ class BackupInGitServiceProvider extends ServiceProvider
 				Commands\BackupDBs::class,
             ]);
         }
+
+		$this->publishes([
+			__DIR__.'/../config/BackupInGit.php' => base_path('config/BackupInGit.php'),
+		], [
+			'BackupInGit',
+			'BackupInGit:config'
+		]);
     }
 
     /**
-     * Register the application services.
+     * Registra los servicios de la aplicación.
      *
      * @return void
      */
