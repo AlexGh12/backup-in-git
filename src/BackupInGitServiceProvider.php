@@ -16,15 +16,15 @@ class BackupInGitServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Commands\BackupDB::class,
-				Commands\BackupDBs::class,
+                Commands\BackupDbCommand::class,
+				Commands\PublishCommand::class,
+				Commands\InstallCommand::class,
             ]);
         }
 
 		$this->publishes([
 			__DIR__.'/../config/BackupInGit.php' => base_path('config/BackupInGit.php'),
 		], [
-			'BackupInGit',
 			'BackupInGit:config'
 		]);
     }
